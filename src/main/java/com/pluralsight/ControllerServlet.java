@@ -138,10 +138,4 @@ throws ServletException, IOException{
 		doGet(request, response);
 
 	}
-
-	public void updateBook(Book book) {
-
-		
-	}
-
 }
