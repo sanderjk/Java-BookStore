@@ -124,7 +124,7 @@ private void showEditForm(HttpServletRequest request, HttpServletResponse respon
 throws ServletException, IOException{
 	int id = Integer.parseInt(request.getParameter("id"));
 	Book existingBook = bookDAO.getBook(id);
-	RequestDispatcher dispatcher = request.getRequestDispatcher("/Bookform.jsp");
+	RequestDispatcher dispatcher = request.getRequestDispatcher("/BookForm.jsp");
 	request.setAttribute("book", existingBook);
 	dispatcher.forward(request, response);
 }
