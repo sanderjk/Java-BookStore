@@ -139,4 +139,9 @@ throws ServletException, IOException{
 
 	}
 
+	public void updateBook(Book book) {
+
+		
+	}
+
 }
