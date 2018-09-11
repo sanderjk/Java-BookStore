@@ -104,8 +104,8 @@ try{
     }
     public void updateBook(Book book) {
       String SQL = "UPDATE book SET title = ?, author = ?, price = ? " +
-       "WHERE id =?";
-try{
+                   "WHERE id = ?";
+    try{
       PreparedStatement statement = jdbcConnection.prepareStatement(SQL);
     }catch (SQLException e){
       e.printStackTrace();
