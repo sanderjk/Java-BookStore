@@ -108,7 +108,9 @@ try{
     try{
       PreparedStatement statement = jdbcConnection.prepareStatement(SQL);
       statement.setString(1, book.getTitle());
-      statement.setString(1, book.getAuthor());
+      statement.setString(2, book.getAuthor());
+      statement.setFloat(3, book.getprice());
+      statement.setInt(4, book.getID());
 
     }catch (SQLException e){
       e.printStackTrace();
