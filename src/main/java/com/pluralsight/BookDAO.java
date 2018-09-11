@@ -107,8 +107,8 @@ try{
                    "WHERE id = ?";
     try{
       PreparedStatement statement = jdbcConnection.prepareStatement(SQL);
-      statement.setString(1, book.getTitle())
-      statement.setString(1, book.getAuthor())
+      statement.setString(1, book.getTitle());
+      statement.setString(1, book.getAuthor());
 
     }catch (SQLException e){
       e.printStackTrace();
